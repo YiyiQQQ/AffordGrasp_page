@@ -161,9 +161,12 @@ body {
   object-fit: cover;
 }
 
-/* 确保最后一行的视频居中 */
-.columns.is-centered > .column.is-4:only-child {
-  margin-left: auto;
-  margin-right: auto;
+/* 最后一行的视频：宽度与前三行相同，高度与单个视频一致 */
+.video-box-last {
+  /* 覆盖默认的16:9比例，使用固定高度（与单个视频高度一致） */
+  padding-bottom: 18.75% !important; /* 3/16 = 18.75%，这样高度与单个视频一致 */
+  max-width: 100%;
+  margin: 0 auto;
 }
+
 
