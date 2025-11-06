@@ -162,11 +162,11 @@ body {
 }
 
 /* 最后一行的视频：宽度与前三行相同，高度按比例放大保持16:9 */
-.video-box-last {
+.column.is-12 .video-box.video-box-last,
+.video-box.video-16x9.video-box-last {
   /* 保持16:9比例，宽度是单个视频的3倍，高度也应该是3倍 */
   padding-bottom: 56.25% !important; /* 16:9 = 56.25%，保持比例 */
-  max-width: 100%;
-  margin: 0 auto;
+  height: 0 !important;
 }
 
 
